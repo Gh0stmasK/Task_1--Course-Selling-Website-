@@ -30,3 +30,12 @@ sr.reveal('.contact-container .left', { origin: "right" });
 sr.reveal('.contact-container .right', { origin: "left" });
 sr.reveal('.footer-container', { origin: "bottom" });
 sr.reveal('.copyright', { origin: "top" });
+
+function toggleMenu() {
+    var navlist = document.getElementById('navlist');
+    if (navlist.style.display === "flex") {
+        navlist.style.display = "none";
+    } else {
+        navlist.style.display = "flex";
+    }
+}

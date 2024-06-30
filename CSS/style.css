@@ -132,6 +132,7 @@ section {
     cursor: pointer;
     text-transform: capitalize;
     transition: var(--transition);
+    position: relative;
 }
 
 .btn:hover {
@@ -852,6 +853,7 @@ section {
     padding: .5rem 0;
     display: flex;
     max-width: 11rem;
+    align-items: center;
 }
 
 .footer .form input {
@@ -995,6 +997,27 @@ section {
     .footer-container {
         grid-template-columns: 1fr 1fr;
     }
+
+    .navlist {
+        flex-direction: column;
+        display: none;
+        background-color: #707375;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .form input{
+        border: 10px solid rgba(255, 255, 255, 0.625);
+    }
+    .social-icons{
+        padding-top: 2rem;
+    }
 }
 
 /* =================================
@@ -1056,5 +1079,21 @@ section {
 
     .footer-container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .navlist {
+        flex-direction: column;
+        display: none;
+        background-color: #707375;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu-btn {
+        display: block;
     }
 }
